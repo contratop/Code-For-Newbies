@@ -1,34 +1,32 @@
 # Indice
+- [Indice](#indice)
 - [Sentencias](#sentencias)
-    + [Caracteristicas de una condicion afirmativa](#caracteristicas-de-una-condicion-afirmativa)
-    + [Caracteristicas de una condicion negativa](#caracteristicas-de-una-condicion-negativa)
-  * [Sentencias IF](#sentencias-if)
-    + [Aclaraciones](#aclaraciones-8)
-  * [Sentencias ELSEIF](#sentencias-elseif)
-    + [Aclaraciones](#aclaraciones-9)
-  * [Sentencias ELSE](#sentencias-else)
-    + [Aclaraciones](#aclaraciones-10)
-  * [Invertir una condicion](#invertir-una-condicion)
-  * [Ejemplos de sentencias](#ejemplos-de-sentencias)
-    + [Ejemplo correcto](#ejemplo-correcto)
-    + [Ejemplo incorrecto](#ejemplo-incorrecto)
-    + [Otro ejemplo incorrecto](#otro-ejemplo-incorrecto)
-  * [Comparadores para sentencias](#comparadores-para-sentencias)
-    + [Comparadores de igualdad](#comparadores-de-igualdad)
+    - [Caracteristicas de una condicion afirmativa](#caracteristicas-de-una-condicion-afirmativa)
+    - [Caracteristicas de una condicion negativa](#caracteristicas-de-una-condicion-negativa)
+  - [Sentencias IF](#sentencias-if)
+  - [Sentencias ELSEIF](#sentencias-elseif)
+  - [Sentencias ELSE](#sentencias-else)
+  - [Invertir una condicion](#invertir-una-condicion)
+  - [Ejemplos de sentencias](#ejemplos-de-sentencias)
+    - [Ejemplo correcto](#ejemplo-correcto)
+    - [Ejemplo incorrecto](#ejemplo-incorrecto)
+    - [Otro ejemplo incorrecto](#otro-ejemplo-incorrecto)
+  - [Comparadores para sentencias](#comparadores-para-sentencias)
+    - [Comparadores de igualdad](#comparadores-de-igualdad)
       - [Comparador -eq](#comparador--eq)
       - [Comparador -ne](#comparador--ne)
       - [Comparador -gt](#comparador--gt)
       - [Comparador -ge](#comparador--ge)
       - [Comparador -lt](#comparador--lt)
       - [Comparador -le](#comparador--le)
-    + [Comparadores de coincidencia](#comparadores-de-coincidencia)
+    - [Comparadores de coincidencia](#comparadores-de-coincidencia)
       - [Comparador -like](#comparador--like)
       - [Comparador -match](#comparador--match)
       - [Comparador -notmatch](#comparador--notmatch)
-    + [Comparadores de contencion](#comparadores-de-contencion)
+    - [Comparadores de contencion](#comparadores-de-contencion)
       - [Comparador -contains](#comparador--contains)
       - [Comparador -notcontains](#comparador--notcontains)
-    + [Comparadores de tipo](#comparadores-de-tipo)
+    - [Comparadores de tipo](#comparadores-de-tipo)
       - [Comparador -is](#comparador--is)
       - [Comparador -isnot](#comparador--isnot)
 
@@ -60,7 +58,7 @@ if(CONDICION){
     CODIGO A EJECUTAR SI LA CONDICION DEL IF ES VERDADERA
 }
 ```
-### Aclaraciones
+**Aclaraciones**:
 El IF se va a ejecutar si se comple con la condicion en afirmativa
 
 De lo contrario, no se va a ejecutar nada (Va a omitir este IF)
@@ -76,7 +74,7 @@ elseif(CONDICION){
     CODIGO A EJECUTAR SI LA CONDICION DE ELSEIF ES VERDARERA
 }
 ```
-### Aclaraciones
+**Aclaraciones**:
 Se puede anidar tantos ELSEIF como se desee
 
 Solo se puede poner ELSEIF si hay un IF antes
@@ -95,7 +93,7 @@ else{
     CODIGO A EJECUTAR SI NINGUNA CONDICION ES VERDADERA
 }
 ```
-### Aclaraciones
+**Aclaraciones**:
 Solo se puede poner ELSE si hay un IF antes
 
 EL ELSE no lleva ninguna condicion, solo se ejecuta en caso de que todas las condiciones del IF y los ELSEs no se cumlan
