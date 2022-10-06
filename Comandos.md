@@ -32,7 +32,9 @@ Los SubComandos modifican el comportamiento del comando principal, por ejemplo
         write-host "Hola Mundo" | Out-File "C:\Users\Public\Documents\HolaMundo.txt"
 
 En este caso, el SubComando Out-File modifica el comportamiento del comando Write-Host, en lugar de mostrar el resultado en la terminal, lo guarda en un archivo.
+
 ---
+
 ## Parametro -Verbose
 La gran mayoria de comandos, permite ejecutarse con el parametro -Verbose, el cual muestra informacion adicional durante la ejecuccion del comando.
 
