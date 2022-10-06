@@ -3,20 +3,19 @@
 - [Indice](#indice)
 - [Comandos](#comandos)
 - [SubComandos](#subcomandos)
-  - [En este caso, el SubComando Out-File modifica el comportamiento del comando Write-Host, en lugar de mostrar el resultado en la terminal, lo guarda en un archivo.](#en-este-caso-el-subcomando-out-file-modifica-el-comportamiento-del-comando-write-host-en-lugar-de-mostrar-el-resultado-en-la-terminal-lo-guarda-en-un-archivo)
   - [Parametro -Verbose](#parametro--verbose)
-  - [Get-Help](#get-help)
-    - [Importante](#importante)
-  - [Start-Sleep](#start-sleep)
-    - [Start-Proccess](#start-proccess)
-  - [Get-Date](#get-date)
-  - [Change-Directory](#change-directory)
-  - [Get-ChildItem](#get-childitem)
-  - [Test-Path](#test-path)
-  - [Get-Content](#get-content)
-  - [Remove-Item](#remove-item)
-  - [New-Item](#new-item)
-  - [Set-Clipboard & Get-Clipboard](#set-clipboard--get-clipboard)
+- [Get-Help](#get-help)
+  - [Importante](#importante)
+- [Start-Sleep](#start-sleep)
+  - [Start-Proccess](#start-proccess)
+- [Get-Date](#get-date)
+- [Change-Directory](#change-directory)
+- [Get-ChildItem](#get-childitem)
+- [Test-Path](#test-path)
+- [Get-Content](#get-content)
+- [Remove-Item](#remove-item)
+- [New-Item](#new-item)
+- [Set-Clipboard & Get-Clipboard](#set-clipboard--get-clipboard)
 
 # Comandos
 Los comandos realizan cierta funcion en el sistema, estos pueden ser ejecutados desde la terminal o desde un script.
@@ -44,12 +43,12 @@ Si por ejemplo, queremos eliminar un directorio, podemos usar el comando Remove-
 
 ---
 
-## Get-Help
+# Get-Help
 Este comando muestra la ayuda de un comando, Es muy util para profundizar sobre un comando en concreto y sacar mas funciones de la misma.
     
         Get-Help Start-Sleep
 
-### Importante
+## Importante
 Si el comando Get-Help no funciona correctamente, es posible que se requiera actualizar toda la documentacion de ayuda de los comandos, para ello se debe ejecutar el siguiente comando:
 
         Update-Help
@@ -62,7 +61,7 @@ De esta forma, se abre el navegador con la documetacion del comando en linea.
 
 ---
 
-## Start-Sleep
+# Start-Sleep
 Es un comando que permite pausar la ejecucion del script por un tiempo determinado.
 
     Start-Sleep -Seconds 5
@@ -71,7 +70,7 @@ En este caso, se pausa la ejecuccion del script por 5 segundos.
 
 ---
 
-### Start-Proccess
+## Start-Proccess
 Es un comando que permite ejecutar un programa desde el script.
 
     Start-Process -FilePath "C:\Windows\notepad.exe"
@@ -92,7 +91,7 @@ Este parametro -Wait, pausa la ejecucion del script hasta que el programa se cie
 
 ---
 
-## Get-Date
+# Get-Date
 Es un comando que permite obtener la fecha y hora actual.
 
     Get-Date
@@ -102,7 +101,7 @@ Si se desea obtener la fecha y hora actual en un formato determinado, se puede u
         Get-Date -Format "dd/MM/yyyy HH:mm:ss"
 
 ---
-## Change-Directory
+# Change-Directory
 Es un comando que permite cambiar de directorio.
 
     Change-Directory "C:\Users\Usuario\Desktop"
@@ -122,7 +121,7 @@ O tambien la variable especial $PWD
 
 ---
 
-## Get-ChildItem
+# Get-ChildItem
 Es un comando que permite obtener los archivos y carpetas de un directorio.
 
     Get-ChildItem
@@ -135,7 +134,7 @@ Si se desea obtener los archivos y carpetas de un directorio en especifico, se p
 
 ---
 
-## Test-Path
+# Test-Path
 Es un comando que permite verificar si un archivo o carpeta existe.
 
     Test-Path "C:\Users\Usuario\Desktop\Archivo.txt"
@@ -153,7 +152,7 @@ Podemos usarla en comparadores de sentencias, por ejemplo:
 
 ---
 
-## Get-Content
+# Get-Content
 Es un comando que permite obtener el contenido de un archivo.
 
     Get-Content "C:\Users\Usuario\Desktop\Archivo.txt"
@@ -162,7 +161,7 @@ Nos devuelve todo el contenido del archivo, en consola.
 
 ---
 
-## Remove-Item
+# Remove-Item
 Este comando permite eliminar archivos y carpetas.
 
     Remove-Item "C:\Users\Usuario\Desktop\Archivo.txt"
@@ -177,7 +176,7 @@ Si se desea eliminar definitivamente el/los elementos de forma eficaz, se debe u
 
 ---
 
-## New-Item
+# New-Item
 Con este comando, se pueden crear archivos en blanco, similar al comando Touch en Linux.
 
     New-Item "C:\Users\Usuario\Desktop\Archivo.txt"
@@ -188,7 +187,7 @@ Si se desea crear una carpeta, se debe usar el parametro -ItemType Directory
 
 ---
 
-## Set-Clipboard & Get-Clipboard
+# Set-Clipboard & Get-Clipboard
 Permite modificar y obtener el contenido del portapapeles.
 
     Set-Clipboard "Hola Mundo"
