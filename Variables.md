@@ -97,6 +97,12 @@ Esta variable almacena uno o mas objetos
 ```
 $objects = @{nombre="pepito";edad=20}
 ```
+Tambien se puede declarar haciendo Target
+```
+$objects = @{}
+$objects.nombre = "pepito"
+$objects.edad = 20
+```
 **Aclaraciones**:
 Es como tener un conjunto de variables dentro de otra variable
 
@@ -115,6 +121,15 @@ Estas variables almacenan objetos dentro de objetos
 
 ```
 $objects = @{nombre="pepito";edad=20;hobbies=@{hobbie1="futbol";hobbie2="natacion"}}
+```
+Tambien se puede declarar haciendo Target
+```
+$objects = @{}
+$objects.nombre = "pepito"
+$objects.edad = 20
+$objects.hobbies = @{}
+$objects.hobbies.hobbie1 = "futbol"
+$objects.hobbies.hobbie2 = "natacion"
 ```
 **Aclaraciones**:
 Es como tener un conjunto de variables dentro de otra variable, y dentro de esa variable, otra variable con un conjunto de variables
