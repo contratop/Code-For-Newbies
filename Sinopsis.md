@@ -2,15 +2,17 @@
 
 - [Indice](#indice)
 
-
 # Explicacion de Sinopsis en codigo
+
 Al inicio de nuestro archivo .ps1, se puede especificar una ayuda de como usar el codigo, que lo leera la canalizacion de la consola, esta ayuda integrada en codigo, se llama "Sinopsis" y se puede ver en la consola con el comando "Get-Help" y el nombre del archivo .ps1, por ejemplo:
 
-    Get-Help .\MiScript.ps1
-
+````powershell
+Get-Help .\MiScript.ps1
+````
 
 # Codigo de ejemplo de Sinopsis
-````
+
+````powershell
 function ejemplodefuncion {
 
 <#
