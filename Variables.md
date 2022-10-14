@@ -219,6 +219,26 @@ Si el valor de $primernumero es un 4, y el valor de $segundonumero es un 3, el r
 
 ---
 
+## Sumar y restar 1 a una variable numerica
+
+Se puede sumar o restar 1 a una variable numerica
+
+```powershell
+$numero = 1
+$numero++
+```
+
+En este caso, se le suma 1 a la variable $numero
+
+```powershell
+$numero = 1
+$numero--
+```
+
+En este caso, se le resta 1 a la variable $numero
+
+---
+
 ## Variables con valor nulo
 
 Estas variables no tienen valor asignado
