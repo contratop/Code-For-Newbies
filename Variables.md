@@ -356,4 +356,12 @@ Esta variable almacena la ruta hacia el directorio HOME del usuario
 $home
 ```
 
+### Variable especial Comprobar Errores
+
+Esta varaible devuelve True si no ha ocurrido un error en la linea anterior, y devuelve False si ha ocurrido un error en la linea anterior
+
+```powershell
+$?
+```
+
 ---
