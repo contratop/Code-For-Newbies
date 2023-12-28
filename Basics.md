@@ -1,5 +1,7 @@
 # Indice
 
+- [Indice](#indice)
+- [Ejecuccion de Script en consola](#ejecuccion-de-script-en-consola)
 - [Snippets Basicos](#snippets-basicos)
 - [Anotaciones / Comentarios](#anotaciones--comentarios)
 - [Imprimir en pantalla (Write-Host)](#imprimir-en-pantalla-write-host)
@@ -9,6 +11,24 @@
   - [Imprimir varios Write-Host en una sola linea](#imprimir-varios-write-host-en-una-sola-linea)
 - [Imprimir Alertas (Write-Warning)](#imprimir-alertas-write-warning)
 - [Imprimir Errores (Write-Error)](#imprimir-errores-write-error)
+
+# Ejecuccion de Script en consola
+
+Para ejecutar un script en consola, se usa la ruta entera o relativa del script
+
+```powershell
+.\script.ps1
+```
+
+En este caso, esta ejecutando el archivo script.ps1 que esta en el mismo directorio que la consola.
+
+Tambien se puede ejecutar un script guardando el estado de las variables en la consola actual
+
+```powershell
+. .\script.ps1
+```
+
+poniendo un punto delante de la ejecuccion, se ejecuta en la consola actual, y no en una nueva consola temporal, permitiendo guardar las variables que se han definido en el script para depurarlas en la consola actual.
 
 # Snippets Basicos
 
