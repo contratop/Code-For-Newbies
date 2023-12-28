@@ -4,6 +4,8 @@
 - [Flujos](#flujos)
   - [Switch](#switch)
   - [While](#while)
+  - [For](#for)
+  - [Foreach](#foreach)
 
 # Flujos
 
@@ -62,3 +64,42 @@ Cuando la variable que se usa como comparador, nos devuelve un valor que no es v
 La forma mas controlada de hacer bucles es con ```` $while = $true y $while = $false ````
 
 Pero se puede usar todo tipo de comparadores.
+
+## For
+
+El flujo FOR es un bucle que se repite un numero de veces que le indiquemos.
+
+```powershell
+for ($i = 0; $i -lt 10; $i++) {
+    write-host "Me repito"
+    write-host "Vuelta numero $i"
+}
+```
+
+En este caso, el bucle se repite 10 veces, ya que la variable ````$i```` empieza en 0, y se repite mientras sea menor que 10, y en cada vuelta, se le suma 1 a la variable ````$i````
+
+Descomponiendo los parametros fe FOR, tenemos:
+
+- ````$i = 0````: Inicializamos la variable ````$i```` a 0
+- ````$i -lt 10````: Mientras ````$i```` sea menor (-lt) que 10, se repite el bucle
+- ````$i++````: En cada vuelta, se le suma 1 a la variable ````$i````
+
+---
+
+## Foreach
+
+El flujo FOREACH es un bucle que se repite un numero de veces que le indiquemos, pero en este caso, se repite por cada elemento de una lista.
+
+```powershell
+$lista = "elemento1", "elemento2", "elemento3"
+foreach ($elemento in $lista) {
+    write-host "El elemento es $elemento"
+}
+```
+
+En este caso, el bucle se repite 3 veces, ya que la variable ````$lista```` tiene 3 elementos, y en cada vuelta, la variable ````$elemento```` toma el valor de cada elemento de la lista.
+
+---
+
+
+
