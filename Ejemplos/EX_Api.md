@@ -31,8 +31,7 @@ Primero se construye el JSON con el mensaje que queremos enviar
 ```powershell
 #Definimos el TOKEN del BOT
 $token = "<token>"
-# Si el token ya esta definido, no es necesario volver a definirlo (Consultar documentacion de Variables
-)
+# Si el token ya esta definido, no es necesario volver a definirlo (Consultar documentacion de Variables)
 
 # Definimos la URL de la API
 $url = "https://api.telegram.org/bot$token/sendMessage"
@@ -48,3 +47,9 @@ $mensaje = @{
 # Creamos la peticion POST
 $respuesta = Invoke-WebRequest -Uri $url -Method Post -Body $mensaje
 ```
+
+En este caso, estamos usando sendMessage de la API de Telegram, que nos permite enviar un mensaje a un chat de Telegram.
+
+hemos creado una variable objeto llamada $mensaje, que contiene el chat_id y el texto que queremos enviar. esto se envia como si fuera un objeto JSON, pero en realidad es un objeto de powershell.
+
+---
