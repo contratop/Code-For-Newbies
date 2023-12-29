@@ -78,7 +78,7 @@ function NombreDeLaFuncion {
 
 En este caso, la funcion solo aceptara parametros de tipo String.
 
-Tambien podemos poner ele ejempplo con datos Booleanos
+Tambien podemos poner el ejemplo con datos Booleanos
 
 ```powershell
 function NombreDeLaFuncion {
