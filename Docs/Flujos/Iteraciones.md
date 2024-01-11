@@ -99,6 +99,8 @@ foreach ($elemento in $lista) {
 
 En este caso, el bucle se repite 3 veces, ya que la variable ````$lista```` tiene 3 elementos, y en cada vuelta, la variable ````$elemento```` toma el valor de cada elemento de la lista.
 
+Con `FOREACH` podemos usar `continue` para saltarnos la iteracion actual, y `break` para salir del bucle.
+
 ---
 
 
