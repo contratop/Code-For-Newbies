@@ -7,9 +7,9 @@
   - [For](#for)
   - [Foreach](#foreach)
 
-# Flujos
+# Flujos e iteraciones
 
-Gracias a los flujos, controlamos como se ejecuta nuestro codigo PowerShell.
+Gracias a los flujos e iteraciones, controlamos como se ejecuta nuestro codigo PowerShell.
 
 Las sentencias es un tipo de flujo, una vez aprendidas las sentencias, podemos continuar al resto de flujos que tambien son importantes.
 
