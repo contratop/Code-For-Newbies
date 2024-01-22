@@ -134,6 +134,23 @@ function NombreDeLaFuncion {
 
 ---
 
+### Parametros con opciones predefinidas
+
+Con este modificador de parametros, se puede coneguir que solo admita X objetos predefinidos, es decir, un set de objetos validos
+
+```powershell
+function NombreDeLaFuncion {
+    param(
+        [ValidateSet("Objeto1", "Objeto2")]
+        [string]$Parametro
+    )
+}
+```
+
+En este caso, solo sera valido para ese parametro "Objeto1" y "Objeto2"
+
+---
+
 ### Funciones avanzadas
 
 A veces no podras realizar ciertas funciones porque requiere elementos C# o .NET, para ello se pone un modificador que hace que la funcion sea mas avanzada.
