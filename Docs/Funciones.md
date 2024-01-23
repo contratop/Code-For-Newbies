@@ -116,7 +116,33 @@ function NombreDeLaFuncion {
 
 Si te fijas, en el ejemplo anterior se ha puesto una modificacion de parametros, estando el valor Mandatory en True, obligara al usuario a establecer un parametro en $test, en este caso, en formato String
 
+
 ---
+
+### Parametros con Mensaje de Ayuda
+
+Se puede añadir al parametro un mensaje de ayuda que puede ayudar al usuario a saber que introducir en ese parametro
+
+```powershell
+function NombreDeLaFuncion{
+    param(
+        [Parameter(HelpMessage = "Mensaje de ayuda")]
+        [string]$test
+    )
+    #Codigo de la funcion
+}
+```
+#### TIP
+Se pueden combinar diferentes funciones como Mandatory y HelpMessage a la vez
+```powershell
+function NombreDeLaFuncion{
+    param(
+        [Parameter(Mandatory = $true, HelpMessage = "Mensaje de ayuda")]
+        [string]$test
+    )
+    # Codigo de la funcion
+}
+```
 
 ### Parametros con valor por defecto
 
