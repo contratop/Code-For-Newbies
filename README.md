@@ -3,6 +3,7 @@
 ## Descripción del proyecto
 
 Este repositorio contiene recursos y ejemplos de PowerShell para principiantes.
+Tambien sirve de recordatorio a nivel personal.
 
 ## Estructura del proyecto
 
