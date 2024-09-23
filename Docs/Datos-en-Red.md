@@ -9,7 +9,7 @@
 
 Aqui se va a aprender a controlar datos en red en PowerShell
 
-## Invoke-WebRequestç
+## Invoke-WebRequest
 
 Con este comando podemos descargar datos de internet
 
